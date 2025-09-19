@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-bottom: 4px solid var(--color-primary);
+  flex-shrink: 0;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+img {
+  height: 60px;
+  width: 60px;
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .score{
+    font-size: 0.9rem;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
